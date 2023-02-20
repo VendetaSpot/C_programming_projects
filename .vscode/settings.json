@@ -1,5 +1,6 @@
 {
   "files.associations": {
-    "plan_grid.h": "c"
+    "plan_grid.h": "c",
+    "stdio.h": "c"
   }
 }
