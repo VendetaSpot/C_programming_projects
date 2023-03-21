@@ -1,4 +1,4 @@
-.vscode
-.exe
-.i
-.s
+*.vscode
+*.exe
+*.i
+*.s
