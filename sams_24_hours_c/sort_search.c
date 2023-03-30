@@ -3,7 +3,7 @@
 #include <string.h>
 
 
-int sort(int *ptr_array, int size)
+int Sort(int *ptr_array, int size)
 {
     int temp = 0, i;
 
@@ -14,19 +14,12 @@ int sort(int *ptr_array, int size)
             continue;
         }
 
-        while (ptr_array[i] > ptr_array[i + 1])
+        if (ptr_array[i] > ptr_array[i + 1])
         {
             temp = ptr_array[i + 1];
             ptr_array[i + 1] = ptr_array[i];
             ptr_array[i] = temp;
-        }
-
-        while (ptr_array[i] < ptr_array[i - 1])
-        {
-            temp = ptr_array[i - 1];
-            ptr_array[i - 1] = ptr_array[i];
-            ptr_array[i] = temp;
-            --i;
+            i = 0;
         }
     }
     
@@ -38,9 +31,9 @@ int main()
     int size = 12;
     int *ptr_array = array;
 
-    sort(ptr_array, size);
+    Sort(ptr_array, size);
 
-    printf("\nFinished sorting!\n");
+    printf("Finished sorting!\n");
 
     for (int i = 0; i < size; i++)
     {
