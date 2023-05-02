@@ -1,29 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <stddef.h>
-
+#include <stdbool.h>
+#include <string.h>
 
 int main() 
 {
-    int n = 10, first = 0, second = 1, result, i;
-
-    for (i = 0; i < n; i++)
-    {
-        if (i <= 1)
-        {
-            result = i;
-        }
-        else
-        {
-            result = first + second;
-            first = second;
-            second = result;
-        }
-        printf("%d ", result);
-    }
-    
-
     
     
     return 0;
