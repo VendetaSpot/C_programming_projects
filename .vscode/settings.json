@@ -6,6 +6,8 @@
     "string.h": "c",
     "typeinfo": "c",
     "stdlib.h": "c",
-    "stdbool.h": "c"
+    "stdbool.h": "c",
+    "type_traits": "c",
+    "limits": "c"
   }
 }

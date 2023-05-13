@@ -29,16 +29,20 @@ double Calculator(double x, double y, char op)
 
 int main() 
 {
-    float x = 10, y = 15, result = 0;
+    float x, y, result = 0;
     char op = ' ';
-    
+    printf("\n\n<<<<<--------!CALCULATOR!-------->>>>>\n\n");
+
     do 
     {
+        fflush(stdin);
+        printf("Enter two numbers separated by space: ");
+        scanf("%f%f", &x, &y);
         fflush(stdin);
         printf("Enter an operator (+, -, *, /), to exit press x: ");
         scanf("%c", &op);
         if (op == 'x') break;
-        while (op != 'x' && op != '+' && op != '*' && op != '/')
+        while (op != '-' && op != '+' && op != '*' && op != '/')
         {
             fflush(stdin);
             printf("Enter an operator (+, -, *, /), to exit press x: ");
